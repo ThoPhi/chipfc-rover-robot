@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chipfc.roborover.RoverLanding"
+    tools:ignore="MergeRootFrame" >
+    
+    <RelativeLayout
+        android:id="@+id/view_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_answer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@android:color/black"
+		    android:visibility="visible"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+	    android:id="@+id/view_answer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_above="@+id/view_control"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="20dp"
+	    android:padding="10dp">
+    	<Button
+	        android:id="@+id/btn_yes"
+	        android:layout_width="@dimen/rover_anwser_button_width"
+	        android:layout_height="@dimen/rover_anwser_button_height"
+	        android:background="@android:color/white"
+	        android:text="YES"
+	        android:layout_alignParentLeft="true"/>
+	    
+	    <Button
+	        android:id="@+id/btn_no"
+	        android:layout_width="@dimen/rover_anwser_button_width"
+	        android:layout_height="@dimen/rover_anwser_button_height"
+	        android:background="@android:color/white"
+	        android:text="NO"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+	    android:id="@+id/view_control"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dp"
+	    android:background="@drawable/bg_area"
+	    android:padding="10dp">
+	    <Button
+	        android:id="@+id/btn_roverforward"
+	        android:layout_width="@dimen/rover_run_button_width"
+	        android:layout_height="@dimen/rover_run_button_height"
+	        android:background="@android:color/white"
+	        android:layout_alignParentLeft="true"/>
+	    
+	    <Button
+	        android:id="@+id/btn_roverleft"
+	        android:layout_width="@dimen/rover_run_button_width"
+	        android:layout_height="@dimen/rover_run_button_height"
+	        android:background="@android:color/white"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="10dp"/>
+	    
+	    <Button
+	        android:id="@+id/btn_roverback"
+	        android:layout_width="@dimen/rover_run_button_width"
+	        android:layout_height="@dimen/rover_run_button_height"
+	        android:background="@android:color/white"
+	        android:layout_below="@+id/btn_roverforward"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="10dp"/>
+	    
+	    <Button
+	        android:id="@+id/btn_roverright"
+	        android:layout_width="@dimen/rover_run_button_width"
+	        android:layout_height="@dimen/rover_run_button_height"
+	        android:background="@android:color/white"
+	        android:layout_below="@+id/btn_roverforward"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"/>
+	</RelativeLayout>
+</RelativeLayout>
+

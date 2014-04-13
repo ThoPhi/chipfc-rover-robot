@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView 
+        android:id="@+id/knowledge_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <EditText
+        android:id="@+id/txt_knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:editable="false"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
