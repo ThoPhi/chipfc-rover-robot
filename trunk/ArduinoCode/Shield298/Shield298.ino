@@ -36,10 +36,13 @@ byte dirEn =7;
 byte pwmA =6;  // can be 9, 6, 11
 byte pwmB =3;  // can be 5, 10, 3
 
+byte sensorPin = A2;
+
 /**
  *  define for MeetAndroid 
  **/
 MeetAndroid android;
+//byte sensorPin = A2;
 
 //byte dirControl;
 byte inSpeed;
@@ -49,10 +52,12 @@ byte command[2][MAX_COMMAND];
 byte indexCommand = 0;
 byte runningState = 0;
 byte runFlag =0;
+byte countSend=0;
 /**
  *  Setup Function
  **/
 void setup(){
+  pinMode(sensorPin,INPUT);
 //+  initServo;
 myServo.attach(servoPin);
   initMotor();
@@ -78,6 +83,12 @@ void loop(){
   processRun();
   android.receive();
   //  getCommandSerial();
+//  meetAndroid.send)analogRead(sensorPin);
+  countSend++;
+  if(countSend>10){
+  countSend =0;
+  android.send(analogRead(sensorPin));
+  }
   delay(10);
 }
 

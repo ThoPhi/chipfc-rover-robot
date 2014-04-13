@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chipfc.roborover.RoverLanding"
+    tools:ignore="MergeRootFrame" >
+    
+    <RelativeLayout
+	    android:id="@+id/body"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:padding="10dp">
+	    
+        <LinearLayout 
+            android:id="@+id/view_discovery"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal">
+	        
+            <Button
+		        android:id="@+id/btn_roverrun"
+		        android:layout_width="@dimen/rover_landing_button_width"
+		        android:layout_height="@dimen/rover_landing_button_height"
+		        android:background="@drawable/walle"/>
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@android:color/white"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:layout_marginTop="5dp"
+                 android:text="Discovery"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/view_travel_space"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/view_discovery"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+		    android:layout_marginLeft="20dp">
+            
+            <Button
+		        android:id="@+id/btn_roverquiz"
+		        android:layout_width="@dimen/rover_landing_button_width"
+		        android:layout_height="@dimen/rover_landing_button_height"
+		        android:background="@drawable/solarsystemicon"/>
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@android:color/white"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:layout_marginTop="5dp"
+                 android:text="Travel Space"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/view_wiki"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/view_discovery"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="20dp">
+            
+            <Button
+		        android:id="@+id/btn_roverwiki"
+		        android:layout_width="@dimen/rover_landing_button_width"
+		        android:layout_height="@dimen/rover_landing_button_height"
+		        android:background="@drawable/navbar_nav_logo"/>
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@android:color/white"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:layout_marginTop="5dp"
+                 android:text="Wiki"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/view_about"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/view_wiki"
+	        android:layout_below="@+id/view_discovery"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="20dp">
+            
+             <Button
+		        android:id="@+id/btn_roverabout"
+		        android:layout_width="@dimen/rover_landing_button_width"
+		        android:layout_height="@dimen/rover_landing_button_height"
+		        android:background="@drawable/logo_cfc"/>
+             
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@android:color/white"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:layout_marginTop="5dp"
+                 android:text="About"/>
+            
+        </LinearLayout>
+	    
+	    
+	    
+	    
+	    
+	    
+	   
+	</RelativeLayout>
+</RelativeLayout>
+

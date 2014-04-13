@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RoboRover</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="knowledge1_earth">Trái Đất là hành tinh thứ ba tính từ Mặt Trời, đồng thời cũng là hành tinh lớn nhất trong các hành tinh đất đá của hệ Mặt Trời xét về bán kính, khối lượng và mật độ vật chất,là nhà của hàng triệu loài sinh vật, trong đó có con người và cho đến nay đây là nơi duy nhất trong vũ trụ được biết đến là có sự sống</string>
+    <string-array name="quizsofkl1_earth">
+        <item>cho đến nay, Tái Đất là nơi duy nhất trong vũ trụ được biết đến là có sự sống?</item> <!-- Yes -->
+        <item>1</item>
+        <item>Trái Đất là hành tinh thứ 4 tính từ mặt trời?</item> <!-- No -->
+        <item>0</item>
+    </string-array>
+
+    <string name="knowledge2_earth">Trái Đất tương tác với các vật thể khác trong không gian bao gồm Mặt Trời và Mặt Trăng. Hiện nay, thời gian Trái Đất di chuyển hết 1 vòng quanh Mặt Trời bằng 365,26 vòng nó tự quay quanh trục của chính nó. Trục tự quay của Trái Đất nghiêng một góc bằng 23,4° so với trục vuông góc với mặt phẳng quĩ đạo, tạo ra sự thay đổi mùa trên bề mặt của Trái Đất trong một năm chí tuyến</string>
+    <string-array name="quizsofkl2_earth">
+        <item>Do trục của trái đất nghiêng nên khi nó quay quanh mặt trời tạo nên 4 mùa ?</item><!-- yes -->
+        <item>1</item>
+        <item>Trái Đất quay quanh Mặt Trời và chính nó, Mặt Trăng quay quanh Trái Đất</item> <!--  yes-->
+        <item>1</item>
+    </string-array>
+    
+    <string name="knowledge1_sun">Mặt Trời là ngôi sao ở trung tâm Hệ Mặt Trời, chiếm khoảng 99,86% khối lượng của Hệ Mặt Trời. Trái Đất và các thiên thể khác như các hành tinh, tiểu hành tinh, thiên thạch, sao chổi, và bụi quay quanh Mặt Trời. Khoảng cách trung bình giữa Mặt Trời và Trái Đất xấp xỉ 149,6 triệu kilômét (1 Đơn vị thiên văn AU) nên ánh sáng Mặt Trời cần 8 phút 19 giây mới đến được Trái Đất</string>
+    <string-array name="quizsofkl1_sun">
+        <item>Mặt trời chiếm khoảng một nửa khối lượng trong hệ mặt trời?</item> <!-- No -->
+        <item>0</item>
+        <item>Ánh sáng mặt trời cần 8 phút 19 giây mới đến được trái đất?</item> <!-- Yes -->
+        <item>1</item>
+    </string-array>
+    
+    
+    <string name="knowledge2_sun">Quầng nóng của Mặt Trời liên tục mở rộng trong không gian và tạo ra gió Mặt Trời là các dòng hạt có vận tốc gấp 5 lần âm thanh. Bong bóng trong môi trường liên sao được hình thành bởi gió mặt trời, nhật quyển (heliosphere) là cấu trúc liên tục lớn nhất trong Hệ Mặt Trời</string>
+    <string-array name="quizsofkl2_sun">
+        <item>Gió mặt trời là các dòng hạt có vận tốc lớn gấp 5 lần âm thanh</item> <!-- Yes -->
+        <item>1</item>
+        <item>Con người đã đặt chân lên mặt trời</item> <!-- No -->
+        <item>0</item>
+    </string-array>    
+
+</resources>

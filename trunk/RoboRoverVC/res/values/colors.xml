@@ -1,0 +1,4 @@
+<resources>
+	<color name="color_transparent">#00ffffff</color>
+	<color name="color_disable">#88ffffff</color>
+</resources>
